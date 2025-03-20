@@ -5,6 +5,9 @@ export default function App5() {
   const handleSubmit = () => {
     setTodos([...todos, task]);
   };
+  const handleDelete=(task)=>{
+    setTodos(todos.filter((value)=>task!==value));
+  }
   return (
     <div>
       <h3>This is App5</h3>
@@ -17,7 +20,9 @@ export default function App5() {
         <button onClick={handleSubmit}>Submit</button>
         <hr></hr>
         {todos.map((value, index) => (
-          <li key={index}>{value}</li>
+          <li key={index}>
+            {value}-<button onClick={()=> handleDelete(value)}>Delete</button>
+            </li>
         ))}
       </p>
     </div>
