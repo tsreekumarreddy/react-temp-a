@@ -15,9 +15,7 @@ import App9 from "./components/App9";
 import App10 from "./components/App10";
 import App11 from "./components/App11";
 import App12 from "./components/App12";
-import Main from "./components/Main";
-import Child1 from "./components/Child1";
-import Child2 from "./components/Child2";
+import App13 from "./components/App13"
 
 function App() {
   return (
@@ -35,9 +33,7 @@ function App() {
       <Link to="app10">App10</Link>
       <Link to="app11">App11</Link>
       <Link to="app12">App12</Link>
-      {/* <Link to="app12">Main</Link>
-      <Link to="Child1">Child1</Link>
-      <Link to="Child2">Child2</Link> */}
+      <Link to="app13">App13</Link>
     </div>
     <hr></hr>
     <div>
@@ -55,9 +51,7 @@ function App() {
         <Route path="app10" element={<App10/>}></Route>
         <Route path="app11" element={<App11/>}></Route>
         <Route path="app12" element={<App12/>}></Route>
-        {/* <Route path="Main" element={<Main/>}></Route>
-        <Route path="app12" element={<App12/>}></Route>
-        <Route path="app12" element={<App12/>}></Route> */}
+        <Route path="app13" element={<App13/>}></Route>
       </Routes>
     </div>
     </BrowserRouter>
